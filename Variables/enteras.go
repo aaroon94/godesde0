@@ -14,6 +14,6 @@ func MuestroEnteros() {
 	fmt.Println("intde32: ", intde32)
 	fmt.Println("intde64: ", intde64)
 
-	fmt.Printf("los valores son %d, %d, %d", variable, intde32, intde64)
+	fmt.Printf("los valores son %d, %d, %d\n", variable, intde32, intde64)
 
 }
