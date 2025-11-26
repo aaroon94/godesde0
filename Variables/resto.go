@@ -28,3 +28,9 @@ func ConviertoTexto(numero int) (bool, string) {
 	return true, texto
 
 }
+
+func ConviertoNumero(valor string) int {
+	numero, _ := strconv.Atoi(valor)
+	return numero
+
+}
