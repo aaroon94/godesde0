@@ -6,6 +6,8 @@ package main
 variables "github.com/aaroon94/godesde0/Variables"
 */
 import (
+	"fmt"
+
 	ejercicios "github.com/aaroon94/godesde0/ejercicios"
 )
 
@@ -41,6 +43,7 @@ func main() {
 			fmt.Printf("%s \n", os)
 		}
 	*/
-	ejercicios.Convertir("101")
+	num, resultado := ejercicios.Convertir("10")
+	fmt.Println(num, resultado)
 
 }

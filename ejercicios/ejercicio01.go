@@ -17,14 +17,18 @@ import (
 )
 
 func Convertir(cadena string) (int, string) {
-	numero, _ := strconv.Atoi(cadena)
+	numero, err := strconv.Atoi(cadena)
+
+	if err != nil {
+		return 0, "Hubo un error " + err.Error()
+	}
 
 	if numero > 100 {
-		fmt.Println("Es mayor a 100")
 		fmt.Printf("Es un %T \n", numero)
+		return numero, "Es mayor a 100"
 	} else {
-		fmt.Println("Es menor a 100")
 		fmt.Printf("Es un %T \n", numero)
+		return numero, "Es Menor a 100"
 	}
-	return numero, "error"
+
 }
